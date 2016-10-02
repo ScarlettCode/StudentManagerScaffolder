@@ -1,0 +1,27 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using StudentManager.Common.Users;
+using StudentManager.Controllers.BaseControllers;
+using StudentManager.ViewModels.Builders;
+using System.Web.Mvc;
+
+namespace <#= Model.SolutionName #>.Controllers
+{
+	public class <#= Model.Name #>Controller : BaseController
+	{
+		private readonly <#= Model.Name #>ViewModelBuilder _viewModelBuilder;
+
+		public <#= Model.Name #>Controller(IUserService userService) : base(userService)
+		{
+			_viewModelBuilder = new <#= Model.Name #>ViewModelBuilder();
+		}
+
+		[HttpGet]
+		public ActionResult Index()
+		{
+			var model = _viewModelBuilder.BuildIndexViewModel();
+
+			return View("Index", model);
+		}
+	}
+}

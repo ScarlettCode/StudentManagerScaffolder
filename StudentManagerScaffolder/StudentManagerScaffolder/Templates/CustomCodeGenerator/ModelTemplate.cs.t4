@@ -1,0 +1,19 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace <#= Model.SolutionName #>.Common.Models
+{
+	[TrackChanges]
+	public class <#= Model.Name #> : IBaseModel, ISoftDelete
+	{
+		public int Id { get; set; }
+		public string ImportId { get; set; }
+		public bool IsDeleted { get; set; }
+
+		[NotMapped]
+		public int AuditUserId { get; set; }
+
+	}
+}

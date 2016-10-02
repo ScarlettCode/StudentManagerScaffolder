@@ -1,0 +1,9 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+namespace <#= Model.SolutionName #>.ViewModels.Builders
+{
+	public class <#= Model.Name #>IndexViewModel
+	{
+
+	}
+}

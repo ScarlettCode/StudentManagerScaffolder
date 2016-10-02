@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace <#= Model.SolutionName #>.Common.Models.Dtos
+{
+	public class <#= Model.Name #>Dto
+	{
+		public int Id { get; set; }
+	}
+}

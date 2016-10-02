@@ -1,0 +1,17 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using StudentManager.Common.Models.Dtos;
+
+namespace <#= Model.SolutionName #>.Common.<#= Model.Name #>
+{
+	public class <#= Model.Name #>Service : I<#= Model.Name #>Service
+	{
+		private readonly I<#= Model.Name #>Repository _<#= Model.Name.ToLower() #>Repository;
+
+		public <#= Model.Name #>Service(I<#= Model.Name #>Repository <#= Model.Name.ToLower() #>Repository)
+		{
+			_<#= Model.Name.ToLower() #>Repository = <#= Model.Name.ToLower() #>Repository;
+		}
+
+	}
+}

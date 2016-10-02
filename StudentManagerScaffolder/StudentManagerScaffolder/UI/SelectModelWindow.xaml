@@ -1,0 +1,14 @@
+﻿<Window x:Class="StudentManagerScaffolder.UI.SelectModelWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" Height="176" Width="511" Title="Model Name">
+    <Grid FocusManager.FocusedElement="{Binding ElementName=TextBox}">
+        <Label Content="Choose Name:" HorizontalAlignment="Left"   Margin="37,42,0,0" VerticalAlignment="Top" Height="23"/>
+        <Button Content="Save" IsDefault="True" HorizontalAlignment="Left" Margin="317,102,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.187,0.75" Click="Save_Button_Click"/>
+        <Button Content="Cancel" IsCancel="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="405,102,0,0" Click="Cancel_Button_Click"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="23" Margin="142,42,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="338"/>
+
+    </Grid>
+</Window>

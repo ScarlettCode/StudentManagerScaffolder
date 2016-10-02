@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using StudentManager.Common.Models.Dtos;
+using StudentManager.Common.<#= Model.NamePlural #>;
+
+namespace <#= Model.SolutionName #>.Data.Repositories
+{
+	public class <#= Model.Name #>Repository : I<#= Model.Name #>Repository
+	{
+
+	}
+}

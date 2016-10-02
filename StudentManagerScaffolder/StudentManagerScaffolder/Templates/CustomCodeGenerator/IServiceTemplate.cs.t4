@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+<#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using StudentManager.Common.Models;
+using StudentManager.Common.Models.Dtos;
+
+namespace <#= Model.SolutionName #>.Common.<#= Model.Name #>
+{
+	public interface I<#= Model.Name #>Service
+	{
+
+	}
+}
