@@ -20,7 +20,7 @@ namespace StudentManagerScaffolder
             displayName: "Student Manager Scaffolding Extension",
             description: "VSIX Project to help when scaffolding Student Manager code.",
             author: "Michael Esteves",
-            version: new Version(1, 0, 0, 0),
+            version: new Version(1, 0, 1, 0),
             id: typeof(CustomCodeGenerator).Name,
             icon: ToImageSource(Resources._TemplateIconSample),
             gestures: new[] { "Controller", "View", "Area" },
