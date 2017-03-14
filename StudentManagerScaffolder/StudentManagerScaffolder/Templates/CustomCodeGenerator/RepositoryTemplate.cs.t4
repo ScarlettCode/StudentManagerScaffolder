@@ -1,7 +1,7 @@
 ﻿<#@ template language="C#" #>
 <#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
-using StudentManager.Common.Models.Dtos;
-using StudentManager.Common.<#= Model.NamePlural #>;
+using <#= Model.SolutionName #>.Common.Models.Dtos;
+using <#= Model.SolutionName #>.Common.<#= Model.NamePlural #>;
 
 namespace <#= Model.SolutionName #>.Data.Repositories
 {

@@ -1,8 +1,8 @@
 ﻿<#@ template language="C#" #>
 <#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
-using StudentManager.Common.Models.Dtos;
+using <#= Model.SolutionName #>.Common.Models.Dtos;
 
-namespace <#= Model.SolutionName #>.Common.<#= Model.Name #>
+namespace <#= Model.SolutionName #>.Common.<#= Model.NamePlural #>
 {
 	public class <#= Model.Name #>Service : I<#= Model.Name #>Service
 	{

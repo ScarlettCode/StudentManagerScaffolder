@@ -1,8 +1,8 @@
 ﻿<#@ template language="C#" #>
 <#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
-using StudentManager.Common.Users;
-using StudentManager.Controllers.BaseControllers;
-using StudentManager.ViewModels.Builders;
+using <#= Model.SolutionName #>.Common.Users;
+using <#= Model.SolutionName #>.Controllers.BaseControllers;
+using <#= Model.SolutionName #>.ViewModels.Builders;
 using System.Web.Mvc;
 
 namespace <#= Model.SolutionName #>.Controllers

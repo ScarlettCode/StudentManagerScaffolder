@@ -1,5 +1,7 @@
 ﻿<#@ template language="C#" #>
 <#@ parameter name="Model" type=" StudentManagerScaffolder.Model" #>
+using <#= Model.SolutionName #>.ViewModels.<#= Model.NamePlural #>;
+
 namespace <#= Model.SolutionName #>.ViewModels.Builders
 {
 	public class <#= Model.Name #>ViewModelBuilder
